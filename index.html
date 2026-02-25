@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORK.do</title>
+  <!-- external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Literata (earthy serif) & Inter (clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Literata:opsz@7..72&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="wood-panel">
+    <h1>
+      <i class="fa-regular fa-note-sticky"></i> 
+      work.do
+    </h1>
+    <div class="meta-line">
+      <i class="fa-regular fa-star"></i> 
+      <span>simple tasks, lasting rhythm</span>
+    </div>
+
+    <!-- stats row (antique style) -->
+    <div class="stats-row" id="statsPanel">
+      <div class="stat-block"><i class="fa-solid fa-pencil"></i> total <span id="totalTasks" class="count-badge">0</span></div>
+      <div class="stat-block"><i class="fa-regular fa-circle-check"></i> done <span id="completedTasks" class="count-badge">0</span></div>
+      <div class="stat-block"><i class="fa-regular fa-clock"></i> pending <span id="pendingTasks" class="count-badge">0</span></div>
+    </div>
+
+    <!-- add task (woven style) -->
+    <div class="add-task-area">
+      <div class="field-group">
+        <i class="fa-solid fa-pencil"></i>
+        <input type="text" id="taskInput" placeholder="write a new task...">
+      </div>
+      <button class="craft-btn" id="addTaskBtn"><i class="fa-solid fa-plus"></i> Add</button>
+    </div>
+
+    <!-- filter tabs (earthy) -->
+    <div class="filter-cluster" id="filterBar">
+      <button class="filter-tab active" data-filter="all"><i class="fa-regular fa-eye"></i> All</button>
+      <button class="filter-tab" data-filter="pending"><i class="fa-regular fa-hourglass-half"></i> Pending</button>
+      <button class="filter-tab" data-filter="completed"><i class="fa-regular fa-circle-check"></i> Completed</button>
+    </div>
+
+    <!-- task list (basket weave) -->
+    <div class="task-basket" id="taskListContainer">
+      <!-- tasks injected by js -->
+    </div>
+
+    <!-- clear completed button (linen) -->
+    <div class="footer-actions">
+      <button class="linen-btn" id="clearCompletedBtn"><i class="fa-regular fa-trash-can"></i> Clear completed</button>
+    </div>
+    <div class="signature">
+     <i class="fa-solid fa-wand-magic-sparkles"></i>handcrafted
+    </div>
+  </div>
+
+  <!-- external JavaScript (same core logic, new style) -->
+  <script src="script.js"></script>
+</body>
+</html>
