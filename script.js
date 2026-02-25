@@ -1,4 +1,4 @@
-// script.js (same core logic, no changes needed – works with new style)
+
 (function(){
   // ---------- state ----------
   let tasks = [];
@@ -16,7 +16,7 @@
 
   // ---------- load from localStorage ----------
   function loadTasks() {
-    const stored = localStorage.getItem('flowTasks'); // same storage key for continuity
+    const stored = localStorage.getItem('flowTasks'); 
     if (stored) {
       try {
         tasks = JSON.parse(stored);
@@ -226,5 +226,6 @@
       loadTasks();
     }
   });
+
 
 })();
